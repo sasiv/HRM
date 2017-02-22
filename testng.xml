@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test name="TestFF">
+  <parameter name="remoteURL" value="http://192.168.1.16:4444/wd/hub"></parameter>
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      
+      <class name="scripts.VerifyVersion"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test name="TestGC">
+  <parameter name="remoteURL" value="http://192.168.1.16:4444/wd/hub"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      
+      <class name="scripts.VerifyVersion"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
